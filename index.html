@@ -191,55 +191,77 @@
     
     <style>
         .projects {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-        }
-    
-        .project {
-            display: flex;
-            align-items: flex-start;
-            gap: 30px; /* Aumenta la separación entre la imagen y el texto */
-            padding: 10px;
-            background: transparent;
-            box-shadow: none;
-        }
-    
-        .project:hover {
-            background: #f0f0f0; /* Opcional: Agregar un fondo de color claro al pasar el mouse */
-        }
-    
-        .project-link {
-            display: flex;
-            text-decoration: none;
-            color: inherit;
-            width: 100%;
-        }
-    
-        .project-image {
-            max-width: 400px; /* Aumentar el tamaño de la imagen al doble */
-            height: auto;
-            border-radius: 8px;
-        }
-    
-        .project-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    
-        .project-title {
-            margin: 0;
-            font-size: 1.5em; /* Aumentar el tamaño del texto del título */
-            color: #000; /* Color negro para el título */
-        }
-    
-        .project-description {
-            margin: 10px 0 0; /* Ajustar el margen superior */
-            color: #000; /* Color negro para la descripción */
-            text-align: justify; /* Justificar el texto */
-        }
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.project:hover {
+    background: #f0f0f0;
+}
+
+.project-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.project-description {
+    margin: 10px 0 0;
+    color: #000;
+    text-align: justify;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-image {
+        max-width: 90%; /* Ajusta el tamaño máximo de la imagen en móviles */
+    }
+
+    .project-info {
+        align-items: center;
+    }
+
+    .project-title {
+        font-size: 1.2em; /* Ajusta el tamaño del título en móviles */
+    }
+}
+
     </style>
     
     </section>
