@@ -159,38 +159,38 @@
 
     <!-- Contact Section -->
     <section id="contact">
-      <section class="projects">
-        <div class="project">
-            <a href="https://link-a-proyecto-ad.com" class="project-link">
-                <img src="./assets/ad.gif" alt="Imagen del Proyecto de Active Directory" class="project-image">
-                <div class="project-info">
-                    <h2 class="project-title">Gestión Avanzada de Active Directory</h2>
-                    <p class="project-description">Desarrollo de una solución para la administración avanzada de Active Directory, que incluye la automatización de tareas rutinarias y la generación de informes detallados sobre usuarios y grupos.</p>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="https://github.com/ManuMeisen/scripts" class="project-link">
-                <img src="./assets/script.gif" alt="Imagen del Proyecto de Software" class="project-image">
-                <div class="project-info">
-                    <h2 class="project-title">Tools and Scripts</h2>
-                    <p class="project-description">My collection of quality life tools and self-made scripts for multiple purposes.</p>
-                </div>
-            </a>
-        </div>
-        <div class="project">
-            <a href="https://github.com/ManuMeisen/notes" class="project-link">
-                <img src="./assets/notes.gif" alt="Imagen del Proyecto de Azure" class="project-image">
-                <div class="project-info">
-                    <h2 class="project-title">Cybersecurity Notes and Cheatsheets</h2>
-                    <p class="project-description">All my personal notes and cheatsheets for ethical hacking in general.</p>
-                </div>
-            </a>
-        </div>
-    </section>
-    
-    <style>
-        .projects {
+<section class="projects">
+    <div class="project">
+        <a href="https://link-a-proyecto-ad.com" class="project-link">
+            <img src="./assets/ad.gif" alt="Imagen del Proyecto de Active Directory" class="project-image">
+            <div class="project-info">
+                <h2 class="project-title">Gestión Avanzada de Active Directory</h2>
+                <p class="project-description">Desarrollo de una solución para la administración avanzada de Active Directory, que incluye la automatización de tareas rutinarias y la generación de informes detallados sobre usuarios y grupos.</p>
+            </div>
+        </a>
+    </div>
+    <div class="project">
+        <a href="https://github.com/ManuMeisen/scripts" class="project-link">
+            <img src="./assets/script.gif" alt="Imagen del Proyecto de Software" class="project-image">
+            <div class="project-info">
+                <h2 class="project-title">Tools and Scripts</h2>
+                <p class="project-description">My collection of quality life tools and self-made scripts for multiple purposes.</p>
+            </div>
+        </a>
+    </div>
+    <div class="project">
+        <a href="https://github.com/ManuMeisen/notes" class="project-link">
+            <img src="./assets/notes.gif" alt="Imagen del Proyecto de Azure" class="project-image">
+            <div class="project-info">
+                <h2 class="project-title">Cybersecurity Notes and Cheatsheets</h2>
+                <p class="project-description">All my personal notes and cheatsheets for ethical hacking in general.</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<style>
+.projects {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -199,11 +199,13 @@
 
 .project {
     display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 10px;
     background: transparent;
     box-shadow: none;
+    gap: 15px;
 }
 
 .project:hover {
@@ -212,13 +214,16 @@
 
 .project-link {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     color: inherit;
     width: 100%;
 }
 
 .project-image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
 }
@@ -226,43 +231,38 @@
 .project-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .project-title {
-    margin: 0;
-    font-size: 1.5em;
+    margin: 10px 0;
+    font-size: 1.4em;
     color: #000;
 }
 
 .project-description {
     margin: 10px 0 0;
     color: #000;
-    text-align: justify;
+    text-align: center;
+    font-size: 0.9em;
 }
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     .project {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .project-image {
-        max-width: 90%; /* Ajusta el tamaño máximo de la imagen en móviles */
-    }
-
-    .project-info {
-        align-items: center;
+        gap: 10px;
     }
 
     .project-title {
         font-size: 1.2em; /* Ajusta el tamaño del título en móviles */
     }
-}
 
-    </style>
+    .project-description {
+        font-size: 0.8em; /* Ajusta el tamaño de la descripción en móviles */
+    }
+}
+</style>
+
     
     </section>
     <!-- /END Contact Section -->
